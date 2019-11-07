@@ -76,7 +76,7 @@
         margin-right: 40px;
         }
 
-        input{
+        .answer_boxes{
             border-radius: 10px;
             width: 49em;
             height: 2em;
@@ -88,6 +88,12 @@
             width: 49em;
             height: 2em;
             margin-bottom: 20px;
+        }
+
+        .radio_answers{
+            color: rgb(236, 236, 236);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
         }
 
         </style>
@@ -104,19 +110,47 @@
         <div id="form_box">
             <form action="/some_place">
                 <h3 class="questions">Name</h3>
-                <input type="text" placeholder="  Enter your Name">
+                <input class="answer_boxes" type="text" placeholder="  Enter your Name">
 
                 <h3 class="questions">Email</h3>
-                <input type="email" placeholder="  Enter your Email">
+                <input class="answer_boxes" type="email" placeholder="  Enter your Email">
 
                 <h3 class="questions">Age (Optional)</h3>
-                <input type="number" placeholder="  Age">
+                <input class="answer_boxes" type="number" placeholder="  Age">
                 
                 <h3 class="questions">How would you rate us?</h3>
                 <select>
-                    <option >Poor</option>
-
+                    <option>Poor</option>
+                    <option>Satisfactory</option>
+                    <option>Good</option>
+                    <option>Excellent</option>
                 </select>
+
+                <h3 class="questions">Would you recommend us?</h3>
+
+                <label for="description" class="radio_answers">
+                <input type="radio" name="recommendation"> Definitely
+            </label>
+                <br>
+
+                <label for="description" class="radio_answers">
+                <input type="radio" name="recommendation"> Maybe
+            </label>
+
+                <br>
+                <label for="description" class="radio_answers">
+                <input type="radio" name="recommendation"> Not Sure
+            </label>
+
+                <h3 class="questions">Would you use us again in the future?</h3>
+            <select>
+                <option>Definitely</option>
+                <optioN>Not Sure</optioN>
+                <option>No</option>
+            </select>
+
+                <h3 class="questions">Where did you hear from us?</h3>
+            <input type="checkbox">Google<br>
 
             </form>
         </div>
