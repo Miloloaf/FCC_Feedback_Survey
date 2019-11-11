@@ -7,21 +7,19 @@
 
         #background{
             background-image: url("https://images.unsplash.com/photo-1414919823178-e9d9d0afd0ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=1746&q=80");
-            background-attachment:fixed;
-            background-repeat:no-repeat;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
             background-position: center;
             background-blend-mode: normal;
-            box-shadow: 0 0 10px 30px white inset;
-            position: fixed;
+            box-shadow: 0 0 10px 20px rgb(82, 80, 80) inset;
+            position: relative;
             height:100%;
             width: 100%;
         }   
 
         #background_color{
             background-color: rgb(82, 80, 80);
-            position:fixed;
-            height: 100%;
-            width: 100%;
+            margin-left:0px
         }
 
         #title_block{
@@ -33,7 +31,7 @@
             margin-right: auto;
             margin-top: 1em;
             margin-bottom: em;
-            top: 30px;
+            top: 20px;
             padding-bottom: 65px;
             border-radius:10px
         }
@@ -59,9 +57,11 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 40px;
-            padding-top: 10px;
+            margin-bottom: 20px;
+            padding-top: 5px;
             width: 20cm;
             height: 25cm;
+            border-radius: 25px;
         }
 
         .questions{
@@ -80,7 +80,7 @@
             border-radius: 10px;
             width: 49em;
             height: 2em;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         select{
@@ -112,8 +112,7 @@
     </head>
 
 
-    <body>    
-        <div id="background_color"></div>
+    <body id="background_color">    
         <div id="background">
             <div id="title_block">
         <h1 id="title">Feedback Survey Form</h1>
